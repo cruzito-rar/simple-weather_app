@@ -120,3 +120,30 @@ span {
   width: 52%;
  }
 }
+
+@media (max-width: 767px) {
+ input {
+  width: 100%;
+ }
+ 
+ .card-container {
+  width: 380px;
+  height: 400px;
+ }
+
+ .card-icon {
+  width: 180px;
+  height: 180px;
+  bottom: 220px;  
+ }
+
+ .card-temperature {
+  font-size: 65px;
+  right: 80px;
+ }
+
+ .card-footer {
+  height: 27.2%;
+ }
+
+}

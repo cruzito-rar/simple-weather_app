@@ -55,7 +55,7 @@ function App() {
  return (
   <Fragment>
    <div className='container'>
-    <h2> Weather visualizer </h2>
+    <h2> Weather Visualizer </h2>
     <div className='row'>
      <input className='' type="text" onKeyDown={handlerSearch} autoFocus placeholder='País/Ciudad'/>
     </div>
@@ -68,7 +68,7 @@ function App() {
        <p className='card-temperature'> {values.main.temp.toFixed(2)}&deg; </p>
        <img className='card-icon' src={Icons(icon)}/>
        <div className='card-footer'>
-        <p className='min-max-temperature'> <i class="fas fa-thermometer-empty"> </i> {values.main.temp_min.toFixed(2)}&deg; | <i class="fas fa-thermometer-full"> </i> {values.main.temp_max.toFixed(2)}&deg; </p>
+        <p className='min-max-temperature'> <i class='fas fa-thermometer-empty'> </i> {values.main.temp_min.toFixed(2)}&deg; | <i className='fas fa-thermometer-full'> </i> {values.main.temp_max.toFixed(2)}&deg; </p>
         {/* <p className='humidity-wind'>  <i class='fas fa-tint'> </i> {values.main.humidity.toFixed(2)}% <br/> <span> <i className='fas fa-location-arrow'> </i> {values.wind.speed.toFixed(2)} m/s </span> </p> */}
        </div>
       </div>
