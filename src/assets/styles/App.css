@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+* {
+ font-family: 'Rubik', sans-serif;
+}
+
+body {
+ background: #101739;
+ color: #FFFFFF;
+ text-align: center;
+ margin: 0;
+}
+
+.container {
+ box-sizing: border-box;
+ width: 100%;
+ max-width: 1040px;
+ margin: 0 auto;
+ padding: 20px;
+}
+
+.row {
+ display: flex;
+ justify-content: center;
+}
+
+input {
+ width: 45%;
+ border: none;
+ border-radius: .5rem;
+ padding: 10px 6px;
+ font-size: 16px;
+ font-weight: 600;
+ text-align: center;
+ color: #000000;
+}
+
+input:focus {
+ outline: none;
+}
+
+.card {
+ display: flex;
+ margin-top: 20px;
+ justify-content: center;
+}
+
+.card-container {
+ width: 470px;
+ height: 400px;
+ background-color: #81A6D1;
+ position: absolute;
+ border-radius: 20px;
+ margin: 20px 5px;
+ box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, .1);
+}
+
+.card-city-name {    
+ font-weight:300;
+ font-size:40px;
+ color: #000000;
+ bottom: 0;    
+}
+
+.date {
+ color: #000000;
+ margin-top: -20px;
+}
+
+span {
+ font-size: 25px;
+}
+
+.card-icon {
+ position: relative;
+ width: 230px;
+ height: 230px;
+ bottom: 240px;
+ float:right;
+ margin: 5px 5px 0 0;    
+}
+
+.card-temperature {
+ position: relative;
+ font-weight: 300;
+ font-size: 65px;
+ color: #17223B;
+ right: 120px;
+}
+
+.card-footer {
+ width: 100%;
+ height: 25%;
+ display: flex;
+ position: relative;
+ background-color: #6B778D;
+ color: aliceblue;
+ bottom: 200px;
+ border-radius: 0px 0px 20px 20px;
+ justify-content: center;
+ align-items: center;
+ opacity: 2;
+}
+
+.min-max-temperature {
+ font-weight: 300;
+ font-size: 32px;
+ color: aliceblue;
+}
+
+.humidity-wind {
+ font-weight: 300;
+ font-size: 50px;
+ color: aliceblue;
+ margin-left: 60px;
+}
+
+@media (max-width: 1400px) {
+ input {
+  width: 52%;
+ }
+}
