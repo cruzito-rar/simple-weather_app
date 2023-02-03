@@ -179,6 +179,11 @@ span {
   font-size: 17px;
   margin-top: 206px;
  }
+
+ .card-footer span {
+  margin-top: 0;
+  margin-left: 25px;
+ }
 }
 
 @media (max-width: 500px) {
