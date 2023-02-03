@@ -37,6 +37,15 @@ input {
  color: #000000;
 }
 
+.row-2 {
+ display: inline-block;
+ justify-content: center;
+}
+
+.row-2 input {
+ width: 100%;
+}
+
 ::placeholder {
  color: #000000;
  opacity: .65;
@@ -55,8 +64,7 @@ input:focus {
 .card-container {
  width: 50%;
  height: 410px;
- /* background-color: #81A6D1; */
- background: url('https://images.pexels.com/photos/771883/pexels-photo-771883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+ background-color: rgb(129, 166, 209, .6);
  position: absolute;
  border-radius: 20px;
  margin: 20px 5px;

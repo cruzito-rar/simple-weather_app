@@ -9,8 +9,6 @@ function App() {
 
  const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&lang=es&units=metric&appid=0ca7fb8919814e59836c2f5d2c86d168`;
 
- const dailyUrl = `api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={API key}`;
-
  var today = new Date();
  var day = today.getDate();
  var month = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
@@ -77,7 +75,10 @@ function App() {
        </div>
       </div>
      ) : (
-      <h1> {'Ciudad no encontrada'} </h1>
+      <div className='row-2'>
+        <input className='' type="text" onKeyDown={handlerSearch} autoFocus placeholder='Buscar'/> 
+        <h2> {'Ciudad no encontrada'} </h2>
+      </div>
      )
     }
    </div>
