@@ -25,14 +25,21 @@ body {
 }
 
 input {
- width: 45%;
- border: none;
- border-radius: .5rem;
+ width: 90%;
+ background: rgba(255, 255, 255, .5);
+ border: 1px solid #FFFFFF;
+ margin-top: 10px;
+ border-radius: 20px;
  padding: 10px 6px;
  font-size: 16px;
  font-weight: 600;
  text-align: center;
  color: #000000;
+}
+
+::placeholder {
+ color: #000000;
+ opacity: .65;
 }
 
 input:focus {
@@ -46,9 +53,10 @@ input:focus {
 }
 
 .card-container {
- width: 470px;
- height: 400px;
- background-color: #81A6D1;
+ width: 50%;
+ height: 410px;
+ /* background-color: #81A6D1; */
+ background: url('https://images.pexels.com/photos/771883/pexels-photo-771883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
  position: absolute;
  border-radius: 20px;
  margin: 20px 5px;
@@ -57,13 +65,13 @@ input:focus {
 
 .card-city-name {    
  font-weight:300;
- font-size:40px;
- color: #000000;
+ font-size: 40px;
+ color: #FFFFFF;
  bottom: 0;    
 }
 
 .date {
- color: #000000;
+ color: #FFFFFF;
  margin-top: -20px;
 }
 
@@ -75,7 +83,7 @@ span {
  position: relative;
  width: 230px;
  height: 230px;
- bottom: 240px;
+ bottom: 215px;
  float:right;
  margin: 5px 5px 0 0;    
 }
@@ -84,46 +92,65 @@ span {
  position: relative;
  font-weight: 300;
  font-size: 65px;
- color: #17223B;
- right: 120px;
+ color: #FFFFFF;
+ right: 180px;
+}
+
+.card-weather {
+ position: relative;
+ font-weight: 300;
+ font-size: 25px;
+ color: #FFFFFF;
+ right: 195px;
+ margin-top: -60px;
 }
 
 .card-footer {
  width: 100%;
- height: 25%;
+ height: 16%;
  display: flex;
  position: relative;
- background-color: #6B778D;
- color: aliceblue;
+ background-color: #3A4C6E;
+ color: #FFFFFF;
  bottom: 200px;
  border-radius: 0px 0px 20px 20px;
  justify-content: center;
- align-items: center;
- opacity: 2;
+ font-size: 19px;
+}
+
+.card-footer span {
+ margin-top: 15px;
+ margin-left: 25px;
 }
 
 .min-max-temperature {
  font-weight: 300;
- font-size: 32px;
- color: aliceblue;
+ color: #FFFFFF;
 }
 
 .humidity-wind {
- font-weight: 300;
- font-size: 50px;
- color: aliceblue;
- margin-left: 60px;
+ margin-left: 35px;
 }
 
 @media (max-width: 1400px) {
  input {
-  width: 52%;
+  width: 90%;
+ }
+
+ .card-temperature {
+  font-size: 65px;
+  right: 110px;
+ }
+
+ .card-weather {
+  font-size: 28px;
+  right: 125px;
  }
 }
 
 @media (max-width: 767px) {
  input {
-  width: 100%;
+  width: 90%;
  }
  
  .card-container {
@@ -132,18 +159,24 @@ span {
  }
 
  .card-icon {
-  width: 180px;
-  height: 180px;
-  bottom: 220px;  
+  width: 150px;
+  height: 150px;
+  bottom: 180px;  
  }
 
  .card-temperature {
   font-size: 65px;
-  right: 80px;
+  right: 90px;
+ }
+
+ .card-weather {
+  font-size: 28px;
+  right: 105px;
  }
 
  .card-footer {
-  height: 27.2%;
+  height: 16%;
+  font-size: 17px;
+  margin-top: 206px;
  }
-
 }

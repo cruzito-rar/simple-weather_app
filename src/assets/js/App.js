@@ -9,6 +9,8 @@ function App() {
 
  const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&lang=es&units=metric&appid=0ca7fb8919814e59836c2f5d2c86d168`;
 
+ const dailyUrl = `api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={API key}`;
+
  var today = new Date();
  var day = today.getDate();
  var month = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
@@ -16,8 +18,6 @@ function App() {
 
  if(day <= 9) {
   day = '0'+day;
- } if(month <= 9) {
-  month = '0'+month;
  }
 
  var date = day+'/'+month[today.getMonth()]+'/'+year;
@@ -55,21 +55,25 @@ function App() {
  return (
   <Fragment>
    <div className='container'>
-    <h2> Weather Visualizer </h2>
-    <div className='row'>
-     <input className='' type="text" onKeyDown={handlerSearch} autoFocus placeholder='País/Ciudad'/>
-    </div>
+    <h2> Weather City Visualizer </h2>
    </div>
    <div className='card'>
     {(values) ? (
       <div className='card-container'>
+       <div className='row'>
+        <input className='' type="text" onKeyDown={handlerSearch} autoFocus placeholder='Buscar'/>
+       </div>
        <h1 className='card-city-name'> {values.name}, <span> {values.sys.country} </span> </h1>
        <p className='date'> {date} </p>
        <p className='card-temperature'> {values.main.temp.toFixed(2)}&deg; </p>
+       <p className='card-weather'> {values.weather[0].description.charAt(0).toUpperCase()+values.weather[0].description.slice(1)} </p>
        <img className='card-icon' src={Icons(icon)}/>
        <div className='card-footer'>
-        <p className='min-max-temperature'> <i class='fas fa-thermometer-empty'> </i> {values.main.temp_min.toFixed(2)}&deg; | <i className='fas fa-thermometer-full'> </i> {values.main.temp_max.toFixed(2)}&deg; </p>
-        {/* <p className='humidity-wind'>  <i class='fas fa-tint'> </i> {values.main.humidity.toFixed(2)}% <br/> <span> <i className='fas fa-location-arrow'> </i> {values.wind.speed.toFixed(2)} m/s </span> </p> */}
+        <p className='min-max-temperature'> <i className='fas fa-thermometer-empty'> </i> {values.main.temp_min.toFixed(2)}&deg; | <i className='fas fa-thermometer-full'> </i> {values.main.temp_max.toFixed(2)}&deg; </p>
+        <span> - </span>
+        <div className='card-footer-extra'>
+         <p className='humidity-wind'> <i className='fas fa-tint'> </i> {values.main.humidity.toFixed()}% | <i className='fas fa-location-arrow'> </i> {values.wind.speed.toFixed(2)} m/s </p>
+        </div>
        </div>
       </div>
      ) : (
