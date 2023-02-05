@@ -140,6 +140,21 @@ span {
  margin-left: 35px;
 }
 
+p.author {
+ display: flex;
+ justify-content: center;
+ font-variant: JIS04;
+ margin-top: 40%;
+ gap: 7px;
+}
+
+p.author a {
+ margin-top: 2px;
+ text-decoration: none;
+ font-weight: 700;
+ color: #FFFFFF;
+}
+
 @media (max-width: 1400px) {
  input {
   width: 90%;
@@ -153,6 +168,10 @@ span {
  .card-weather {
   font-size: 28px;
   right: 125px;
+ }
+
+ p.author {
+ margin-top: 55%;
  }
 }
 
@@ -225,5 +244,9 @@ span {
   font-size: 15px;
   margin-top: 262px;
   align-items: center;
+ }
+
+ p.author {
+  margin-top: 108%;
  }
 }
