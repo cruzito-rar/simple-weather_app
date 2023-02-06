@@ -8,10 +8,18 @@
 
 # 🏴 Getting Started
 
-`git clone https://github.com/cruzito-exe/simple-weather_app.git` <br>
-`cd simple-weather-app` <br>
-`npm install` <br>
-`npm run dev`
+```
+git clone https://github.com/cruzito-exe/simple-weather_app.git
+```
+```
+cd simple-weather_app
+```
+```
+npm install
+```
+```
+npm run dev
+```
 
 # 🧑🏻‍💻 Technologies
 
