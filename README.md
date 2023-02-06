@@ -4,7 +4,7 @@
 
 # 🪐 Demo
 
-[Deploy](https://color-palette-generator-app-cruzito-exe.vercel.app/)
+[Deploy](https://simple-weather-app-cruzito-exe.vercel.app/)
 
 # 🏴 Getting Started
 
