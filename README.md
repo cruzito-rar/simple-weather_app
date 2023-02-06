@@ -8,7 +8,7 @@
 
 # 🏴 Getting Started
 
-`git clone https://github.com/cruzito-exe/simple-weather-app.git` <br>
+`git clone https://github.com/cruzito-exe/simple-weather_app.git` <br>
 `cd simple-weather-app` <br>
 `npm install` <br>
 `npm run dev`
