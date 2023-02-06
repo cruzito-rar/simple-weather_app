@@ -15,7 +15,6 @@
 
 # 🧑🏻‍💻 Technologies
 
-- [Vite JS](https://vitejs.dev/)
 - [React JS](https://reactjs.org/)
 - [Vercel](https://vercel.com/dashboard)
 
