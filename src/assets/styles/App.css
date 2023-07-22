@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 * {
- font-family: 'Rubik', sans-serif;
+ font-family: 'Montserrat', sans-serif;
 }
 
 body {
- background: #101739;
- color: #FFFFFF;
+ background: #F5F5F5; /* Color de fondo suave */
+ color: #333333; /* Color de texto principal */
  text-align: center;
  margin: 0;
 }
@@ -26,15 +26,15 @@ body {
 
 input {
  width: 90%;
- background: rgba(255, 255, 255, .5);
- border: 1px solid #FFFFFF;
+ background: rgba(240, 240, 240, .7); /* Color de fondo del input */
+ border: 1px solid #CCCCCC; /* Borde del input */
  margin-top: 10px;
  border-radius: 20px;
  padding: 10px 6px;
  font-size: 16px;
  font-weight: 600;
  text-align: center;
- color: #000000;
+ color: #333333; /* Color de texto del input */
 }
 
 .row-2 {
@@ -47,7 +47,7 @@ input {
 }
 
 ::placeholder {
- color: #000000;
+ color: #777777; /* Color del texto de placeholder */
  opacity: .65;
 }
 
@@ -64,7 +64,7 @@ input:focus {
 .card-container {
  width: 50%;
  height: 410px;
- background-color: rgb(129, 166, 209, .6);
+ background-color: rgba(158, 187, 216, .6); /* Color de fondo del contenedor */
  position: absolute;
  border-radius: 20px;
  margin: 20px 5px;
@@ -74,12 +74,12 @@ input:focus {
 .card-city-name {    
  font-weight:300;
  font-size: 40px;
- color: #FFFFFF;
+ color: #333333; /* Color del nombre de la ciudad */
  bottom: 0;    
 }
 
 .date {
- color: #FFFFFF;
+ color: #333333; /* Color del texto de fecha */
  margin-top: -20px;
 }
 
@@ -100,7 +100,7 @@ span {
  position: relative;
  font-weight: 300;
  font-size: 65px;
- color: #FFFFFF;
+ color: #333333; /* Color de temperatura */
  right: 180px;
 }
 
@@ -108,7 +108,7 @@ span {
  position: relative;
  font-weight: 300;
  font-size: 25px;
- color: #FFFFFF;
+ color: #333333; /* Color de texto del clima */
  right: 195px;
  margin-top: -60px;
 }
@@ -118,7 +118,7 @@ span {
  height: 16%;
  display: flex;
  position: relative;
- background-color: #3A4C6E;
+ background-color: #555555; /* Color de fondo del footer */
  color: #FFFFFF;
  bottom: 200px;
  border-radius: 0px 0px 20px 20px;
@@ -152,7 +152,7 @@ p.author a {
  margin-top: 2px;
  text-decoration: none;
  font-weight: 700;
- color: #FFFFFF;
+ color: #333333;
 }
 
 @media (max-width: 1400px) {
@@ -224,25 +224,26 @@ p.author a {
  }
 
  .card-icon {
-  width: 150px;
-  height: 150px;
-  bottom: 140px;  
+  width: 140px;
+  height: 140px;
+  bottom: 150px;  
  }
 
  .card-temperature {
-  font-size: 50px;
+  font-size: 40px;
   right: 90px;
  }
 
  .card-weather {
   font-size: 20px;
-  right: 105px;
+  right: 95px;
+  top: 15px;
  }
 
  .card-footer {
   height: 16%;
   font-size: 15px;
-  margin-top: 262px;
+  margin-top: 292px;
   align-items: center;
  }
 
