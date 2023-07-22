@@ -1,6 +1,6 @@
 # 🌥️ Simple Weather App
 
-![Captura de pantalla 2023-02-05 184025](https://user-images.githubusercontent.com/54298536/216857196-eba36235-ab1d-4e7d-8af5-6681e628ada3.png)
+![work3](https://github.com/cruzito-rar/simple-weather_app/assets/54298536/ae72b296-46d3-4ed9-b155-38a526bc758c)
 
 # 🪐 Demo
 
@@ -18,7 +18,7 @@ cd simple-weather_app
 npm install
 ```
 ```
-npm run dev
+npm run start
 ```
 
 # 🧑🏻‍💻 Technologies
