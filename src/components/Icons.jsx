@@ -1,7 +1,7 @@
 export const Icons = (icon) => {
  switch(icon) {
   case 'Thunderstorm':
-   icon = '../icons/thunderstrorms-rain.svg';
+   icon = '../icons/thunderstrorm.svg';
   break;
   case 'Drizzle':
    icon = '../icons/drizzle.svg';

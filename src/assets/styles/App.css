@@ -156,98 +156,105 @@ p.author a {
 }
 
 @media (max-width: 1400px) {
- input {
-  width: 90%;
- }
-
- .card-temperature {
-  font-size: 65px;
-  right: 110px;
- }
-
- .card-weather {
-  font-size: 28px;
-  right: 125px;
- }
-
- p.author {
- margin-top: 55%;
- }
+  /* Ajuste para pantallas medianas */
+  .card-container {
+    width: 45%;
+    height: 410px;
+  }
+  
+  .card-icon {
+    width: 180px;
+    height: 180px;
+    bottom: 190px;  
+  }
+  
+  .card-temperature {
+    font-size: 55px;
+    right: 130px;
+  }
+  
+  .card-weather {
+    font-size: 25px;
+    right: 145px;
+  }
+  
+  p.author {
+    margin-top: 55%;
+  }
 }
 
 @media (max-width: 767px) {
- input {
-  width: 90%;
- }
- 
- .card-container {
-  width: 380px;
-  height: 400px;
- }
-
- .card-icon {
-  width: 150px;
-  height: 150px;
-  bottom: 180px;  
- }
-
- .card-temperature {
-  font-size: 65px;
-  right: 90px;
- }
-
- .card-weather {
-  font-size: 28px;
-  right: 105px;
- }
-
- .card-footer {
-  height: 16%;
-  font-size: 17px;
-  margin-top: 206px;
- }
-
- .card-footer span {
-  margin-top: 0;
-  margin-left: 25px;
- }
+  /* Ajuste para pantallas pequeñas */
+  .card-container {
+    width: 380px;
+    height: 400px;
+  }
+  
+  .card-icon {
+    width: 150px;
+    height: 150px;
+    bottom: 150px;  
+  }
+  
+  .card-temperature {
+    font-size: 45px;
+    right: 100px;
+  }
+  
+  .card-weather {
+    font-size: 20px;
+    right: 105px;
+    top: 10px;
+  }
+  
+  .card-footer {
+    height: 18%;
+    font-size: 17px;
+    margin-top: 267px;
+  }
+  
+  .card-footer span {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  
+  p.author {
+    margin-top: 78%;
+  }
 }
 
 @media (max-width: 500px) {
- input {
-  width: 90%;
- }
- 
- .card-container {
-  width: 350px;
-  height: 400px;
- }
-
- .card-icon {
-  width: 140px;
-  height: 140px;
-  bottom: 150px;  
- }
-
- .card-temperature {
-  font-size: 40px;
-  right: 90px;
- }
-
- .card-weather {
-  font-size: 20px;
-  right: 95px;
-  top: 15px;
- }
-
- .card-footer {
-  height: 16%;
-  font-size: 15px;
-  margin-top: 292px;
-  align-items: center;
- }
-
- p.author {
-  margin-top: 108%;
- }
+  /* Ajuste para pantallas muy pequeñas */
+  .card-container {
+    width: 300px;
+    height: 400px;
+  }
+  
+  .card-icon {
+    width: 120px;
+    height: 120px;
+    bottom: 150px;  
+  }
+  
+  .card-temperature {
+    font-size: 35px;
+    right: 80px;
+  }
+  
+  .card-weather {
+    font-size: 18px;
+    right: 85px;
+    top: 5px;
+  }
+  
+  .card-footer {
+    height: 20%;
+    font-size: 15px;
+    margin-top: 292px;
+    align-items: center;
+  }
+  
+  p.author {
+    margin-top: 125%;
+  }
 }
