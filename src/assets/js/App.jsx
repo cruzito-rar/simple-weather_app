@@ -107,7 +107,7 @@ function App() {
                   <i className="fas fa-tint"> </i>{" "}
                   {values.main.humidity.toFixed()}% |{" "}
                   <i className="fas fa-location-arrow"> </i>{" "}
-                  {values.wind.speed.toFixed(2)} m/s{" "}
+                  {values.wind.speed.toFixed(2)} m/s{""}
                 </p>
               </div>
             </div>
