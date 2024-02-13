@@ -101,7 +101,7 @@ function App() {
                 <i className="fas fa-thermometer-full"> </i>{" "}
                 {values.main.temp_max.toFixed(2)}&deg;{" "}
               </p>
-              <div className="card-footer-extra">
+              <div className="card-footer-extra" style={{marginTop: "50px"}}>
                 <p className="humidity-wind">
                   {" "}
                   <i className="fas fa-tint"> </i>{" "}
